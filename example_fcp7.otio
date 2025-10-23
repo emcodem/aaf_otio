@@ -1,0 +1,2037 @@
+{
+    "OTIO_SCHEMA": "Timeline.1",
+    "metadata": {
+        "AAF": {
+            "ClassName": "CompositionMob",
+            "CreationTime": "2025-10-16 21:22:20",
+            "LastModified": "2025-10-16 21:22:01",
+            "MobAttributeList": {
+                "AudioPluginWindowTrack": 32769,
+                "PRJ_BOUNDARY_FRAMES": 1,
+                "SEQUERNCE_FORMAT_STRING": "HD 1080i/50",
+                "SEQUERNCE_FORMAT_TYPE": 11,
+                "_ATN_APP_SETTINGS": "__AttributeList",
+                "_IMAGE_BOUNDS_OVERRIDE": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?><Bounds>  <Source>-800/1 -450/1 1600/1 900/1</Source></Bounds>",
+                "_USER_POS": 72,
+                "_VERSION": 2
+            },
+            "MobID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.1322f3f7.0964a506.690de89c.253ac110",
+            "Name": "Untitled Sequence.04.Exported.01",
+            "Slots": {},
+            "UsageCode": "Usage_TopLevel"
+        }
+    },
+    "name": "Untitled Sequence.04.Exported.01",
+    "global_start_time": {
+        "OTIO_SCHEMA": "RationalTime.1",
+        "rate": 25.0,
+        "value": 90000.0
+    },
+    "tracks": {
+        "OTIO_SCHEMA": "Stack.1",
+        "metadata": {},
+        "name": "tracks",
+        "source_range": null,
+        "effects": [],
+        "markers": [],
+        "enabled": true,
+        "children": [
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Picture data (legacy)",
+                            "Identification": "6f3c8ce1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Picture"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Picture",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Picture data (legacy)",
+                                    "Identification": "6f3c8ce1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Picture"
+                                },
+                                "Length": 68,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 68.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "ComponentAttributeList": {
+                                    "_IMAGE_BOUNDS_OVERRIDE": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?><Bounds>  <Framing>-800/1 -450/1 1600/1 900/1</Framing>  <Valid>-800/1 -450/1 1600/1 900/1</Valid>  <Essence>-800/1 -450/1 1600/1 900/1</Essence>  <Source>-800/1 -1370/3 1600/1 2720/3</Source></Bounds>"
+                                },
+                                "DataDefinition": {
+                                    "Description": "Picture data (legacy)",
+                                    "Identification": "6f3c8ce1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Picture"
+                                },
+                                "Length": 2,
+                                "Name": "sonyfx6",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                "SourceMobSlotID": 2,
+                                "SourceMobUsage": "",
+                                "StartTime": 0
+                            }
+                        },
+                        "name": "sonyfx6",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 21:02:34",
+                                        "LastModified": "2025-10-16 21:02:50",
+                                        "MobAttributeList": {
+                                            "_GEN": 1760648554,
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 0,
+                                            "_MIXMATCH_FIELDMOTION_TAG": 0,
+                                            "_OUT": 2,
+                                            "_SAVED_AAF_AUDIO_LENGTH": 3450,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 50,
+                                            "_SPANNEDUSINGFILLER": 1,
+                                            "_SYNC": "__PortableObject",
+                                            "_USER_POS": 1,
+                                            "_VERSION": 2
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                        "Name": "sonyfx6",
+                                        "Slots": {},
+                                        "UserComments": {
+                                            "UNC Path": "C:\\temp\\1avid\\sonyfx6.MXF"
+                                        }
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 10800000.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file://C:/temp/1avid/sonyfx6.MXF"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "ComponentAttributeList": {
+                                    "_IMAGE_BOUNDS_OVERRIDE": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?><Bounds>  <Framing>-800/1 -450/1 1600/1 900/1</Framing>  <Valid>-800/1 -450/1 1600/1 900/1</Valid>  <Essence>-800/1 -450/1 1600/1 900/1</Essence>  <Source>-800/1 -450/1 1600/1 900/1</Source></Bounds>"
+                                },
+                                "DataDefinition": {
+                                    "Description": "Picture data (legacy)",
+                                    "Identification": "6f3c8ce1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Picture"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 1,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Picture data (legacy)",
+                                                "Identification": "6f3c8ce1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Picture"
+                                            },
+                                            "Description": "",
+                                            "Identification": "9d2ea890-0968-11d3-8a38-0050040ef7d2",
+                                            "IsTimeWarp": true,
+                                            "Name": "Motion Control",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "",
+                                "effect_name": ""
+                            },
+                            {
+                                "OTIO_SCHEMA": "Effect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 1,
+                                            "DataDefinition": {
+                                                "Description": "Picture data (legacy)",
+                                                "Identification": "6f3c8ce1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Picture"
+                                            },
+                                            "Description": "",
+                                            "Identification": "ca1a01fb-e449-47b3-8230-3c1e08b84636",
+                                            "IsTimeWarp": false,
+                                            "Name": "ColorAdapter",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidEffectID": {},
+                                            "AvidParameterByteOrder": 18761,
+                                            "MC AVX2 EFFECT VERSION": 1,
+                                            "TransformationDesc": {}
+                                        }
+                                    }
+                                },
+                                "name": "ColorAdapter",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Video"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 68,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 68.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "sonyfx6",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                "SourceMobSlotID": 3,
+                                "SourceMobUsage": "",
+                                "StartTime": 0
+                            }
+                        },
+                        "name": "sonyfx6",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 21:02:34",
+                                        "LastModified": "2025-10-16 21:02:50",
+                                        "MobAttributeList": {
+                                            "_GEN": 1760648554,
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 0,
+                                            "_MIXMATCH_FIELDMOTION_TAG": 0,
+                                            "_OUT": 2,
+                                            "_SAVED_AAF_AUDIO_LENGTH": 3450,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 50,
+                                            "_SPANNEDUSINGFILLER": 1,
+                                            "_SYNC": "__PortableObject",
+                                            "_USER_POS": 1,
+                                            "_VERSION": 2
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                        "Name": "sonyfx6",
+                                        "Slots": {},
+                                        "UserComments": {
+                                            "UNC Path": "C:\\temp\\1avid\\sonyfx6.MXF"
+                                        }
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 10800000.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file://C:/temp/1avid/sonyfx6.MXF"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 2,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 68,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 68.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "sonyfx6",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                "SourceMobSlotID": 4,
+                                "SourceMobUsage": "",
+                                "StartTime": 0
+                            }
+                        },
+                        "name": "sonyfx6",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 21:02:34",
+                                        "LastModified": "2025-10-16 21:02:50",
+                                        "MobAttributeList": {
+                                            "_GEN": 1760648554,
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 0,
+                                            "_MIXMATCH_FIELDMOTION_TAG": 0,
+                                            "_OUT": 2,
+                                            "_SAVED_AAF_AUDIO_LENGTH": 3450,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 50,
+                                            "_SPANNEDUSINGFILLER": 1,
+                                            "_SYNC": "__PortableObject",
+                                            "_USER_POS": 1,
+                                            "_VERSION": 2
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                        "Name": "sonyfx6",
+                                        "Slots": {},
+                                        "UserComments": {
+                                            "UNC Path": "C:\\temp\\1avid\\sonyfx6.MXF"
+                                        }
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 10800000.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file://C:/temp/1avid/sonyfx6.MXF"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 3,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 68,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 68.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "sonyfx6",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                "SourceMobSlotID": 5,
+                                "SourceMobUsage": "",
+                                "StartTime": 0
+                            }
+                        },
+                        "name": "sonyfx6",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 21:02:34",
+                                        "LastModified": "2025-10-16 21:02:50",
+                                        "MobAttributeList": {
+                                            "_GEN": 1760648554,
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 0,
+                                            "_MIXMATCH_FIELDMOTION_TAG": 0,
+                                            "_OUT": 2,
+                                            "_SAVED_AAF_AUDIO_LENGTH": 3450,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 50,
+                                            "_SPANNEDUSINGFILLER": 1,
+                                            "_SYNC": "__PortableObject",
+                                            "_USER_POS": 1,
+                                            "_VERSION": 2
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                        "Name": "sonyfx6",
+                                        "Slots": {},
+                                        "UserComments": {
+                                            "UNC Path": "C:\\temp\\1avid\\sonyfx6.MXF"
+                                        }
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 10800000.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file://C:/temp/1avid/sonyfx6.MXF"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 4,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 68,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 68.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "sonyfx6",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                "SourceMobSlotID": 6,
+                                "SourceMobUsage": "",
+                                "StartTime": 0
+                            }
+                        },
+                        "name": "sonyfx6",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "ExternalReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 21:02:34",
+                                        "LastModified": "2025-10-16 21:02:50",
+                                        "MobAttributeList": {
+                                            "_GEN": 1760648554,
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 0,
+                                            "_MIXMATCH_FIELDMOTION_TAG": 0,
+                                            "_OUT": 2,
+                                            "_SAVED_AAF_AUDIO_LENGTH": 3450,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 50,
+                                            "_SPANNEDUSINGFILLER": 1,
+                                            "_SYNC": "__PortableObject",
+                                            "_USER_POS": 1,
+                                            "_VERSION": 2
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010105.01010f10.13000000.0f9f4741.0964a506.4550e89c.253ac110",
+                                        "Name": "sonyfx6",
+                                        "Slots": {},
+                                        "UserComments": {
+                                            "UNC Path": "C:\\temp\\1avid\\sonyfx6.MXF"
+                                        }
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 10800000.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 0.0
+                                    }
+                                },
+                                "available_image_bounds": null,
+                                "target_url": "file://C:/temp/1avid/sonyfx6.MXF"
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 5,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 70,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 70.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 6,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 70,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 70.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 7,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 70,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 70.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 8,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            },
+            {
+                "OTIO_SCHEMA": "Track.1",
+                "metadata": {
+                    "AAF": {
+                        "ClassName": "Sequence",
+                        "Components": {},
+                        "DataDefinition": {
+                            "Description": "Sound data (legacy)",
+                            "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                            "Name": "Sound"
+                        },
+                        "Length": 72,
+                        "MediaKind": "Sound",
+                        "Name": "Sequence"
+                    }
+                },
+                "name": "Sequence",
+                "source_range": null,
+                "effects": [],
+                "markers": [],
+                "enabled": true,
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Gap.1",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "Filler",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 70,
+                                "Name": "Filler"
+                            }
+                        },
+                        "name": "Filler",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 70.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 0.0
+                            }
+                        },
+                        "effects": [],
+                        "markers": [],
+                        "enabled": true
+                    },
+                    {
+                        "OTIO_SCHEMA": "Clip.2",
+                        "metadata": {
+                            "AAF": {
+                                "ClassName": "SourceClip",
+                                "DataDefinition": {
+                                    "Description": "Sound data (legacy)",
+                                    "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                    "Name": "Sound"
+                                },
+                                "Length": 2,
+                                "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                "SourceID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                "SourceMobSlotID": 9,
+                                "SourceMobUsage": "",
+                                "StartTime": 27
+                            }
+                        },
+                        "name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1",
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 2.0
+                            },
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1",
+                                "rate": 25.0,
+                                "value": 27.0
+                            }
+                        },
+                        "effects": [
+                            {
+                                "OTIO_SCHEMA": "TimeEffect.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "Operation": {
+                                            "Bypass": 0,
+                                            "DataDefinition": {
+                                                "Description": "Sound data (legacy)",
+                                                "Identification": "78e1ebe1-6cef-11d2-807d-006008143e6f",
+                                                "Name": "Sound"
+                                            },
+                                            "Description": "",
+                                            "Identification": "f1db0f27-8d64-11d3-80df-006008143e6f",
+                                            "IsTimeWarp": true,
+                                            "Name": "Audio Warp",
+                                            "NumberInputs": 1,
+                                            "OperationCategory": "OperationCategory_Effect",
+                                            "ParametersDefined": {}
+                                        },
+                                        "Parameters": {
+                                            "AvidMotionInputFormat": 2,
+                                            "AvidMotionOutputFormat": 0,
+                                            "AvidMotionPulldown": 0,
+                                            "AvidPhase": 0,
+                                            "SpeedRatio": "1"
+                                        }
+                                    }
+                                },
+                                "name": "Audio Warp",
+                                "effect_name": ""
+                            }
+                        ],
+                        "markers": [],
+                        "enabled": true,
+                        "media_references": {
+                            "DEFAULT_MEDIA": {
+                                "OTIO_SCHEMA": "MissingReference.1",
+                                "metadata": {
+                                    "AAF": {
+                                        "AppCode": 7,
+                                        "ClassName": "MasterMob",
+                                        "ConvertFrameRate": false,
+                                        "CreationTime": "2025-10-16 16:58:17",
+                                        "LastModified": "2025-10-16 20:36:18",
+                                        "MobAttributeList": {
+                                            "_IMPORTSETTING": "__AttributeList",
+                                            "_IN": 27,
+                                            "_IN_DELTA": "0.000000",
+                                            "_OUT": 29,
+                                            "_OUT_DELTA": "0.000000",
+                                            "_SAVED_AAF_AUDIO_LENGTH": 416640,
+                                            "_SAVED_AAF_AUDIO_RATE_DEN": 1,
+                                            "_SAVED_AAF_AUDIO_RATE_NUM": 48000,
+                                            "_USER_POS": 28,
+                                            "_USER_POS_DELTA": "0.000000"
+                                        },
+                                        "MobID": "urn:smpte:umid:060a2b34.01010101.01010f00.13000000.060e2b34.7f7f2a80.68f12429.856e09bd",
+                                        "Name": "c:\\.ffastrans_work_root\\20250926-1442-2939-1afc-0db4cc07754a\\20251016-1858-1183-22a3-37ccde208224\\temp\\FX6_EO0002",
+                                        "Slots": {}
+                                    }
+                                },
+                                "name": "",
+                                "available_range": {
+                                    "OTIO_SCHEMA": "TimeRange.1",
+                                    "duration": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 2.0
+                                    },
+                                    "start_time": {
+                                        "OTIO_SCHEMA": "RationalTime.1",
+                                        "rate": 25.0,
+                                        "value": 27.0
+                                    }
+                                },
+                                "available_image_bounds": null
+                            }
+                        },
+                        "active_media_reference_key": "DEFAULT_MEDIA"
+                    }
+                ],
+                "kind": "Audio"
+            }
+        ]
+    }
+}

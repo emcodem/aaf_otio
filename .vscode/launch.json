@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Run Script in venv",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}/venv/Scripts/python.exe",
+      "args": [
+        "-i",
+        "C:\\temp\\1avid\\avci\\Untitled Sequence.06.aaf",
+        "-o",
+        "C:\\temp\\1avid\\consolidated",
+        "-s",
+        "C:\\temp\\1avid\\avci",
+        "-b",
+        "bmxtranswrap",
+      ]
+    }
+  ]
+}
