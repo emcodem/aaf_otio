@@ -17,6 +17,8 @@
         "C:\\temp\\1avid\\avci",
         "-b",
         "bmxtranswrap",
+        "-ha",
+        "10",
       ]
     }
   ]

@@ -1,6 +1,15 @@
 
+####
+#  aaftimelineparser.py
+# emcdem@ffasatrans.com
+# initial commit: 24.10.2025
+# License: GPL or the one that comes closest to GPL that the used libraries allow
+# Description: parses aaf timeline, can use bmxtranswrap to create a consolidated copy of the pieces in the timeline
+####
+
 import argparse
 import sys
+import logging
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List
@@ -11,6 +20,10 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pymediainfo import MediaInfo
 
+logging.basicConfig(
+    level=logging.DEBUG,                   # minimum level to log
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
 @dataclass
 class CutClip:
     path: Path
@@ -59,16 +72,6 @@ formats.
 Available adapters: {}
 """.format(otio.adapters.available_adapter_names())
 
-def _resolve_media(path,trackname):
-    if path is None:
-        return trackname
-    for ext in (".mxf", ".mp4"):
-        path = Path(path)
-        _current = path / f"{trackname}{ext}"
-        if (_current).exists():
-            return(_current)
-    return trackname
-
 def _parsed_args():
     """ parse commandline arguments with argparse """
 
@@ -105,10 +108,11 @@ def _parsed_args():
         help='path to bmx executable, e.g. c:\\temp\\bmxtranswrap.exe',
     )
     parser.add_argument(
-        '--bmx',
+        '-ha',
+        '--handle',
         type=str,
         required=False,
-        help='path to bmx executable, e.g. c:\\temp\\bmxtranswrap.exe',
+        help='for bmx command, add this amount of frames before and after each partial to restore',
     )
     result = parser.parse_args()
     
@@ -140,10 +144,9 @@ def main():
             if isinstance(item, otio.schema.Clip):
                 sr = item.source_range
                 _path = _resolve_media(args.source,item.name)
-                print(f"  Clip: {_path or '(unnamed)'}")
+                logging.debug(f"  Clip: {_path or '(unnamed)'}")
                 if sr:
-                    _st = otio.opentime.RationalTime(100, 25)
-                    print(f"    Source range: start={sr.start_time.to_seconds()}, duration={sr.duration.to_seconds()}")
+                    logging.debug(f"    Source range: start={sr.start_time.to_seconds()}, duration={sr.duration.to_seconds()}")
                     ffconcat_clips.append(
                         #todo:ffconcat has outpoint, not duration
                         CutClip(path=_path, start=sr.start_time.to_seconds(), duration=sr.duration.to_seconds())
@@ -154,12 +157,23 @@ def main():
                         )
                     
                 else:
-                    print("    Source range: None")
+                    logging.debug("    Source range: None")
 
-    print(generate_ffconcat(ffconcat_clips))
+    logging.info(generate_ffconcat(ffconcat_clips))
     bmx_cmds = (generate_bmx(bmx_clips,args.output,args.bmx))
     execute_bmx(bmx_cmds)
 
+
+def _resolve_media(path,trackname):
+    #returns either trackname or if a file was found, the full path
+    if path is None:
+        return trackname
+    for ext in (".mxf", ".mp4"):
+        path = Path(path)
+        _current = path / f"{trackname}{ext}"
+        if (_current).exists():
+            return(_current)
+    return trackname
 
 def generate_ffconcat(clips):
     lines = ["ffconcat version 1.0"]
@@ -168,7 +182,9 @@ def generate_ffconcat(clips):
         path_str = str(clip.path).replace("\\", "/")
         lines.append(f"file '{path_str}'")
         lines.append(f"inpoint {clip.start}")
-        lines.append(f"outpoint {clip.duration}")
+        lines.append(f"outpoint {round(clip.duration + clip.start,3)}")
+    logging.debug("\n" + "\n".join(lines))
+    logging.info("\n" + "\n".join(lines))
     return "\n".join(lines)
 
 def get_source_rate(filepath):
@@ -210,29 +226,30 @@ def execute_bmx(cmds):
     #execute all bmx cmds parallel
     results = []
     with ThreadPoolExecutor() as executor:
+        {logging.debug("Executing: " +"\n" + cmd) for cmd in cmds}
         future_to_cmd = {executor.submit(run_command, cmd): cmd for cmd in cmds}
         for future in as_completed(future_to_cmd):
             results.append(future.result())
     #check results        
     failed = [r for r in results if not r["success"]]
     if failed:
-        print("The following commands failed:")
+        logging.error("The following commands failed:")
         for r in failed:
-            print(f"- Command: {r['cmd']}")
-            print(f"  Return code: {r['returncode']}")
-            print(f"  stderr: {r['stderr'].strip()}")
-            print("-" * 40)
+            logging.error(f"- Command: {r['cmd']}")
+            logging.error(f"  Return code: {r['returncode']}")
+            logging.error(f"  stderr: {r['stderr'].strip()}")
+            logging.error("-" * 40)
 
     if any(not r["success"] for r in results):
-        print("One or more commands failed!")
+        logging.error("One or more commands failed!")
         sys.exit(2)
     else:
-        print("All commands succeeded!") 
+        logging.debug("All commands succeeded!") 
         sys.exit(0)      
 
 if __name__ == '__main__':
     try:
         main()
     except otio.exceptions.OTIOError as err:
-        sys.stderr.write("ERROR: " + str(err) + "\n")
+        logging.error("ERROR: " + str(err) + "\n")
         sys.exit(1)
