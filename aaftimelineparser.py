@@ -9,6 +9,9 @@
 
 import argparse
 import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), "venv/Lib/site-packages/"))
+
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -19,7 +22,7 @@ from opentimelineio.schema import ExternalReference
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pymediainfo import MediaInfo
-
+args = None
 logging.basicConfig(
     level=logging.DEBUG,                   # minimum level to log
     format="%(asctime)s [%(levelname)s] %(message)s"
@@ -29,7 +32,39 @@ class CutClip:
     path: Path
     start: float
     duration: float
+    bmx_start_frames: int = 0
+    bmx_duration_frames: int = 0
 
+class CutClipList(list):
+    def append(self, item: CutClip):
+        # checks if path is already in list, if yes expand start and duration 
+                
+        if not isinstance(item, CutClip):
+            raise TypeError(
+                f"Only CutClip instances can be appended, got {type(item).__name__}"
+            )
+
+        # Search for an existing clip with the same path
+        for existing in self:
+            if existing.path == item.path:
+                existing_end = existing.start + existing.duration
+                new_end = item.start + item.duration
+
+                # Update start if new item starts earlier
+                if item.start < existing.start:
+                    existing.start = item.start
+                    logging.debug("Updating start %s to: %i",item.path,existing.start)
+
+                # Update duration if new item ends later
+                if new_end > existing_end:
+                    existing.duration = new_end - existing.start
+                    logging.debug("Updating duration %s to: %i",item.path,existing.duration)
+
+                # Don’t append a duplicate
+                return
+            
+        # No existing clip with same path
+        super().append(item)
 
 def run_command(cmd):
     """
@@ -110,7 +145,7 @@ def _parsed_args():
     parser.add_argument(
         '-ha',
         '--handle',
-        type=str,
+        type=int,
         required=False,
         help='for bmx command, add this amount of frames before and after each partial to restore',
     )
@@ -126,7 +161,7 @@ def _parsed_args():
 
 def main():
     """Parse arguments and convert the files."""
-
+    global args
     args = _parsed_args()
   
     in_adapter = otio.adapters.from_filepath(args.input).name
@@ -136,7 +171,7 @@ def main():
         in_adapter,
     )
     ffconcat_clips = []
-    bmx_clips = []
+    bmx_clips = CutClipList()
     for _t in result_tl.tracks:
         for item in _t:
             if (_t.kind != "Video"):
@@ -153,7 +188,7 @@ def main():
                         )
                     bmx_clips.append(
                         #bmx wants edit units
-                        CutClip(path=_path, start=sr.start_time.to_frames(), duration=sr.duration.to_frames())
+                        CutClip(path=_path, start=sr.start_time.to_seconds(), duration=sr.duration.to_seconds())
                         )
                     
                 else:
@@ -196,7 +231,7 @@ def generate_bmx(clips,output_path,bmxtranswrap):
     #for each clip, generate a bmx command for shell exec
     output_path = Path(output_path)
     _cmds = []
-    apply_handle(clips)
+    apply_handle(clips,args.handle)
     for clip in clips:
         # FFmpeg expects forward slashes even on Windows
         
@@ -205,8 +240,8 @@ def generate_bmx(clips,output_path,bmxtranswrap):
 
         bmxargs = [
                    str (bmxtranswrap) + " -t op1a -o \""+str(_out_file)+"\" --start ",
-                   clip.start," --dur ",
-                   clip.duration,
+                   clip.bmx_start_frames," --dur ",
+                   clip.bmx_duration_frames,
                    " \""+str(clip.path)+"\""]
         bmxargs = [str(x) for x in bmxargs]
         bmxargs = " ".join(bmxargs)
@@ -218,9 +253,15 @@ def apply_handle(clips: List[CutClip], handle: int = 0) -> None:
     Modifies start and duration of each CutClip 
     """
     for clip in clips:
-        reduction = min(handle, clip.start)  # cannot reduce below 0
-        clip.start -= reduction
-        clip.duration += handle
+        orig_framerate = get_source_rate(str(clip.path))
+        start_frames = clip.start * orig_framerate
+        duration_frames = clip.duration * orig_framerate
+        reduction = min(handle, start_frames)  # cannot reduce below 0
+        clip.bmx_start_frames = start_frames - reduction
+        clip.bmx_duration_frames = handle + reduction + duration_frames
+        clip.bmx_start_frames = round(start_frames - reduction)
+        clip.bmx_duration_frames = round(handle + reduction + duration_frames)
+        logging.debug("calculated bmx start and duration: %i, %i", clip.bmx_start_frames, clip.bmx_duration_frames)
 
 def execute_bmx(cmds):
     #execute all bmx cmds parallel

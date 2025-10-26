@@ -10,15 +10,15 @@
       "python": "${workspaceFolder}/venv/Scripts/python.exe",
       "args": [
         "-i",
-        "C:\\temp\\1avid\\avci\\Untitled Sequence.06.aaf",
+        "C:\\temp\\1avid\\consolidated\\Untitled Sequence.01.aaf",
         "-o",
         "C:\\temp\\1avid\\consolidated",
         "-s",
-        "C:\\temp\\1avid\\avci",
+        "C:\\temp\\1avid\\original",
         "-b",
         "bmxtranswrap",
         "-ha",
-        "10",
+        "50",
       ]
     }
   ]
